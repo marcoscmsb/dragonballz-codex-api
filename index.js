@@ -23,7 +23,7 @@ const personagens = [
 
 
 api.get("/", (req, res) =>{
-    res.json( { mensagem: "Olá mundo" } )
+    res.json( { mensagem: "Olá" } )
 })
 
 api.get("/personagens", (req, res) => {
