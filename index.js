@@ -7,6 +7,8 @@ api.use(cors({    //Habilita o Cors (Cross Origin Resource Sharing)
     oring: "*"
 }))
 
+const PORT = process.env.PORT  || 3001
+
 
 
 const personagens = [
@@ -37,6 +39,6 @@ api.post("/personagens", (req, res) => {
 
 
 
-api.listen(3001, () =>{
-    console.log("Api esta rodando")
+api.listen(PORT, () =>{
+    console.log("Api esta rodando" + PORT)
 })
