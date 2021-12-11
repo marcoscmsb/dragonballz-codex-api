@@ -30,7 +30,7 @@ api.get("/", (req, res) =>{
     res.json( { mensagem: "Olá Mundo" } )
 })
 
-api.get("/personagens", async (req, res) => {
+api.get("/personagens", async (req, res) => { // s
     const resultado = await personagemModel.find({})  //Buscar todos
     res.json(resultado)
 })
